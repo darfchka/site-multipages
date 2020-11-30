@@ -1,0 +1,369 @@
+*{
+    box-sizing: border-box; /* éviter le bordement */
+}
+
+/* Reset = réinitialise les données pré-enregistrées du navigateur. */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    background-image: url("../img/palm-leaves-shadows-on-sandy-wall.jpg"); /* Attention ici nous sommes dans le dossier css, les chemins ne sont pas les mêmes que dans l'index.html */
+}
+
+h1{
+    font-size: 45px;
+    font-family:'Roboto', sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 35px;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(189, 132, 140);
+}
+
+h3{
+    font-size: 22px;
+    color: black;
+    padding: 15px;
+    text-shadow: 1px 1px 2px rgb(189, 132, 140) ;
+}
+
+h4{
+    text-align: center;
+    margin-top: 30px;
+}
+
+blockquote{
+    font-style: italic;
+    font-size: 120%;
+}
+
+strong{
+    font-weight: bold;
+}
+
+/* ************ HEADER ************* */
+header{
+    background-color: rgb(189, 132, 140);
+    height: 175px;
+}
+
+#logo{
+    float: left;
+    width: 25%;
+    background-color:rgb(189, 132, 140);
+    padding: 15px;
+    text-align: center;
+
+}
+
+#slogan{
+    float: left;
+    width: 50%;
+    background-color: rgb(189, 132, 140);
+    padding-top: 50px;
+}
+
+#social{
+    float: left;
+    width: 25%;
+}
+
+#social i{
+    background-color: rgb(189, 132, 140);
+    font-size: 30px;
+    text-align: right;
+    padding: 15px 30px 0 0 rgb(235, 194, 199);
+    display: block;
+}
+header a {
+    color: rgb(66, 31, 36);
+    text-decoration: none;
+}
+
+
+/* ************ Début nav ************* */
+nav{
+    background-color:rgb(189, 132, 140) ;
+    height: 70px;
+    border-bottom: 8px solid rgb(189, 132, 140);
+    text-align: center;
+    padding: 15px;
+}
+
+nav a{
+    margin: 10px;
+    padding: 2px 10px;
+    border-radius: 10px 0px; /* en haut en bas,  droite et gauche*/
+    border: 2px solid rgb(235, 194, 199);
+    background-color:rgb(235, 194, 199);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:'Roboto', sans-serif;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.activ{
+    background-color: rgb(189, 132, 140);
+} 
+
+
+/* ************ FIN nav ************* */
+
+main{
+    background-color: rgb(189, 132, 140);
+    width: 1000px;
+    margin: 0 auto;
+}
+
+aside{
+    height: 250px;
+    background-color: rgb(236, 178, 191);
+}
+
+section{
+    margin-top: 50px;
+    padding: 20px;
+    background-color:  rgb(117, 65, 72, 0.5);
+}
+
+footer{
+    background-color: rgb(189, 132, 140);
+    height: 30px;
+    text-align: right;
+    padding: 5px 10px;
+}
+
+
+/* ************ Debut page textes ************* */
+
+.roboto p{
+    font-family:'Roboto', sans-serif;
+}
+
+
+/* ************ Debut page selecteurs ************* */
+
+.select p{
+    color: rgb(117, 65, 72, 0.5);
+}
+
+.select p:first-of-type, .select p:last-of-type{
+color: rgb(117, 65, 72, 0.5);
+}
+
+.select p:nth-of-type(5), .select p:nth-of-type(6){
+   color: rgb(117, 65, 72, 0.5); 
+}
+
+.select div:not(.zoneB){
+    font-weight: bold;
+}
+
+.select .zoneA{
+    color: black;
+}
+
+.select .zoneB{
+    color: black;
+}
+
+.select .zoneB .couleurBleu{
+    color: black;
+    font-size: 16px;
+}
+
+.select #zoneC{
+    color: black;
+}
+
+.select #zoneD{
+    color: black;
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+/*listes*/
+
+ul.fruits{
+
+    list-style: none;
+}
+
+ul.fruits li{
+    display: inline;
+    margin: 15px;
+}
+
+li.far{
+
+    font-size: 90%;
+    color: blue;
+
+}
+
+li .far:hover{
+    font-size: 150%;
+    color: red;
+}
+
+.imbrique, .imbrique ul{
+
+    padding-left: 15px;
+}
+
+.imbrique{
+
+    cursor: pointer;
+}
+
+.imbrique ul{
+    display: none;
+}
+
+.europe:hover ul, .asie:hover ul{
+    display: block;
+}
+.imbrique li ul li:hover{
+
+    font-size: 200%;
+    background-color: red;
+    display: inline;
+    box-shadow: 5px 10px 10px grey;
+    transition-duration: 1s;
+}
+/*****************************LIENS MENU*************************/
+
+/***********liens*************/
+.ancre{
+    text-align: center;
+}
+
+.ancre a{
+    margin: 8px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px 3px black;
+    font-family: oswald;
+}
+
+.ancre a:hover{
+    box-shadow: none;
+    transition-duration: 0.5s;
+    text-shadow: 1px 5px 10px grey ;
+}
+
+#lien a {
+    text-decoration: none;
+    color: blue;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#lien a:hover{
+    color: red;
+}
+/**************menu***************/
+#menu nav{
+    background: transparent;
+    border: none;
+}
+
+#menu ul{
+    list-style: none;
+    text-align: center;
+}
+
+#menu ul li{
+    display: inline-block;
+}
+
+#menu nav a {
+    padding: 10px;
+    color: grey;
+    text-decoration: none;
+    background: white;
+    transition: 1s ease-in;
+}
+#menu nav a:hover{
+    color: white;
+    background: blue;
+}
+/***********menu deroulant******/
+
+#menuDeroulant{
+    height: 650px;
+}
+#menuDeroulant nav{
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#menuDeroulant nav ul li{
+    float: left;
+    list-style: none;
+    width: 20%;
+}
+#menuDeroulant ul ul{
+    display: none;
+}
+
+#menuDeroulant nav ul li ul li{
+    border-top: 1px solid brown;
+    width: 100%;
+}
+#menuDeroulant nav li{
+    background-color: wheat;
+
+}
+#menuDeroulant nav li a{
+    text-decoration: none;
+    color: black;
+    padding: 4px 0;
+    display: block; 
+}
+#menuDeroulant ul{
+    text-align: center;
+}
+
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2{
+    display: block;
+    color: red;
+}

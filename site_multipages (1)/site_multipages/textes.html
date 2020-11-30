@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- permet de définir le langage utilisé -->
+<html lang="fr"><!-- Indique au navigateur dans quelle langue est le site -->
+<head><!-- Tête de document-->
+    <meta charset="UTF-8"><!-- type d'encodage des caracteres. Il en existe plusieurs. Celui ci est le plus répandu-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Indique au navigateur que la largeur de la page fait la largeur de l'écran et qu'il n'y a aucun zoom -->
+
+    <meta name="description" content="Les textes en HTML">
+    <!-- Description sous le titre dans la recherche google => Référecement -->
+
+    <title>Ma page Textes</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /><!-- lien qui permet d'utiliser font awsome via le cdnjs -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+
+    <body> <!-- corps du document-->
+        <header> <!-- zone du haut => exemple bannière, slogan, logo. On peut en mettre plusieurs dans la page. exemple : header => article et dans article il y a un hearder -->
+          <!--  #logo -->
+          <div id="logo">
+            <a href="#logo">
+              <button type="button"><i class="fas fa-arrow-circle-up"></i></button>
+          </a>
+                <img src="img/mon1ersite_logo1.png" alt="logo HTML">
+        </div>
+
+        <div id="slogan">
+                <h1>Mon premier site en HTML/CSS</h1>
+        </div>
+
+        <div id="social">
+            <a href="http://www.instagram.com" target="_blank"> 
+              <i class="fab fa-instagram"></i>
+          </a>
+            <a href="https://twitter.com/" target="_blank">
+              <i class="fab fa-twitter-square"></i>
+          </a>
+        </div>
+        <div class="clear"></div>
+      </header>
+
+        <nav><!-- zone de menu, les liens pour naviguer sur le site-->
+           <div class="ancreNav">
+               <a href="index.html" >Structure</a>
+               <a href="textes.html" class="activ">Textes</a>
+               <a href="selecteurs.html" >Sélecteurs</a>
+               <a href="images.html" >Images</a>
+               <a href="positions.html" >Positions</a>
+               <a href="zoning.html" >Zoning</a>
+               <a href="tableau.html" >Tableau</a>
+               <a href="listes.html" >Listes</a>
+               <a href="liens_menu.html" >Liens & Menu</a>
+               <a href="formulaires.html" >Formulaires</a>
+               <a href="multimedias.html" >MultiMédias</a>
+               <a href="animations.html" >Animations</a>
+           </div>
+        </nav>
+
+        <main><!-- Contenu principal-->
+            <h2>Les Textes</h2>
+            <section>
+                <h3>Titre de la première section</h3>
+                <blockquote>
+                    <i class="fas fa-quote-left"></i>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. A nihil corporis mollitia ex voluptatibus, nisi tempora numquam placeat quis nesciunt veniam. Incidunt corporis repellendus repellat suscipit ut pariatur non magni?
+                    <i class="fas fa-quote-right"></i>
+                </blockquote>
+
+                <p>
+                    <strong>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ipsum totam illo. Porro quo incidunt cum rem similique eum magni voluptatem officia exercitationem ab eos sunt vel, alias repudiandae impedit deserunt aliquid a atque laboriosam error tempora ut eligendi adipisci. Blanditiis nesciunt atque odit possimus dignissimos hic exercitationem nostrum velit!
+                    </strong>
+                </p>
+            </section>
+
+            <section class="roboto">
+                <h3>
+                    Titre de la section n°2
+                </h3>
+
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint distinctio nobis suscipit? Aperiam perspiciatis distinctio eum eius delectus neque. Repellat ducimus maiores magni placeat necessitatibus earum commodi provident ipsum maxime! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, assumenda.
+                </p>
+            </section>
+
+        </main>
+
+        <footer>
+            <!-- zone du bas, ex: liens admin, mentions legales, plan du site, cgu, cgv, faq, formulaire de contact, copyright-->
+            &copy; 2020 PalmSpring
+        </footer>
+
+    </body>
+</html>
